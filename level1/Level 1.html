@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seasons Grid</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .container > div {
+      background: #f4f4f4;
+      padding: 25px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      border: 2px solid #ddd;
+      transition: 0.3s;
+    }
+
+    .container > div:hover {
+      background: #e2e2e2;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>Winter</div>
+    <div>Spring</div>
+    <div>Summer</div>
+    <div>Fall</div>
+  </div>
+</body>
+</html>
